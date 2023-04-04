@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Listar usuarios en reqres","type":"feature","href":"5fd3e494c922ecd1454695fbb8866a50791cd4de5d6505d77d75cb347f570cef.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Listar usuarios en reqres","type":"feature","href":"5fd3e494c922ecd1454695fbb8866a50791cd4de5d6505d77d75cb347f570cef.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-04-2023 15:13</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-04-2023 11:33</span>
     <br style="clear:left"/>
 </div>
 
@@ -288,7 +288,7 @@ quiero listar usuarios
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                                href="85fea8517999608237739a65ac15e6af5bae93c159d5a216d9df0d9b64ba607d.html"
                                                                                                title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
+                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                                                                 </a>
 
 
@@ -310,11 +310,11 @@ quiero listar usuarios
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="757168fe-f0b7-401f-9571-80db2346de65" ></a>
+                                                        <a name="f08ed255-41df-41c0-9350-5e1a9cc71397" ></a>
 
 
                                                             <div class="scenario-docs card" id="893c4fb2a4a96a1c1aba9b541835ff43619be5e0da2cb21874a099505ccd920b">
-                                                                <div class="scenario-docs card-header failure"
+                                                                <div class="scenario-docs card-header success"
                                                                      style="min-height:1.5em;">
                                                                     <div>
                                                             <span class="scenario-heading">
@@ -324,7 +324,7 @@ quiero listar usuarios
                                                                         <span class="scenario-result-icon">
                                                                 
 
-                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
+                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                             </span>
                                                                     </div>
                                                                 </div>
@@ -351,10 +351,10 @@ quiero listar usuarios
                                                 </div>
                                                 <script>
 
-                                                    var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
+                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                     // Our series array that contains series objects or in this case series data arrays
 
-                                                    var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                    var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                     // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                     // as you saw in the previous example
@@ -393,11 +393,12 @@ quiero listar usuarios
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                <td class="aggregate-result-count">
+                                                                    <a href="a6695cbb9c76506a27d4407bb4c0974169cd7f7d1342447981422493d50f6f83.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                 </td>
-                                                            <td class="automated-stats">0</td>
-                                                            <td class="automated-stats"> </td>
+                                                            <td class="automated-stats">1</td>
+                                                            <td class="automated-stats">100%</td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -421,19 +422,19 @@ quiero listar usuarios
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                    <td colspan="3"><a href="cd6fa745414bece4a6288ee587047e5a4f77caf9f50ceb3603961cf2e3176292.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                     </td>
 
                                                         </tr>
 
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
-                                                                    <a href="d6c48e3a6e7894953a02d4971702eea80ea7cde843b3bc2624a9ccec74e56262.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">100%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -473,11 +474,11 @@ quiero listar usuarios
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>2s</td>
-                                                            <td>2ms</td>
-                                                            <td>2s</td>
-                                                            <td>2s</td>
-                                                            <td>2s</td>
+                                                            <td>4s</td>
+                                                            <td>4ms</td>
+                                                            <td>4s</td>
+                                                            <td>4s</td>
+                                                            <td>4s</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -501,16 +502,16 @@ quiero listar usuarios
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="scenario-result FAILURE">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="85fea8517999608237739a65ac15e6af5bae93c159d5a216d9df0d9b64ba607d.html">Listar usuarios</a>
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>15:13:13</td>
-                                                                    <td>2s 134ms</td>
+                                                                    <td>11:33:20</td>
+                                                                    <td>4s 344ms</td>
                                                                     <td>
-                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

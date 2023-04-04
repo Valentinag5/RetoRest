@@ -1,6 +1,7 @@
 package co.sofkau.stepdefinitions;
 
 import co.sofkau.models.PostCrearUsuario;
+import co.sofkau.models.Response;
 import co.sofkau.models.ResponsePostCrearUsuario;
 import co.sofkau.setup.ApiSetUp;
 import io.cucumber.java.es.Cuando;
@@ -51,14 +52,14 @@ public class PutActualizarUsuarioStepDefinitions extends ApiSetUp {
     @Entonces("el usuario visualiza un codigo de respuesta de estado {int}, el {string} y el {string}")
     public void elUsuarioVisualizaUnCodigoDeRespuestaDeEstadoElYEl(Integer estado, String nombre, String trabajo) {
         try {
-            ResponsePostCrearUsuario actualResponse = returnPostCrearUsuario().answeredBy(actor);
+            String actualResponse = returnPostCrearUsuario().answeredBy(actor);
             actor.should(
                     seeThatResponse("El codigo de respuesta es: " + HttpStatus.SC_OK,
                             response -> response.statusCode(estado)),
                     seeThat("Nombre",
-                            nombr -> actualResponse.getNombre(),equalTo(nombre)),
+                            nombr -> actualResponse,equalTo(nombre)),
                     seeThat("Trabajo",
-                            trabaj -> actualResponse.getTrabajo(),equalTo(trabajo))
+                            trabaj -> actualResponse,equalTo(trabajo))
             );
             LOGGER.info("Codigo de respuesta: " + estado);
         } catch (Exception exception) {

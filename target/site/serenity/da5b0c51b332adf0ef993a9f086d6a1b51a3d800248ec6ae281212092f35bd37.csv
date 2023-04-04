@@ -1,6 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Listar usuarios en reqres","Listar usuarios","FAILURE","2023-04-03T15:13:13.6221156-05:00[America/Bogota]","0.0","2.13"
-"Actualizar usuario patch","Actualizar usuario patch","FAILURE","2023-04-03T15:13:16.5444846-05:00[America/Bogota]","0.0","1.41"
 "Crear usuario","Crear un usuario","FAILURE","2023-04-03T15:13:17.9858819-05:00[America/Bogota]","0.0","0.94"
 "Login exitoso","Login Exitoso","FAILURE","2023-04-03T15:13:18.9600858-05:00[America/Bogota]","0.0","0.75"
 "Actualizar usuario","Actualizar usuario","FAILURE","2023-04-03T15:13:22.0057406-05:00[America/Bogota]","0.0","0.73"

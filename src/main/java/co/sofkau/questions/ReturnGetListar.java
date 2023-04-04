@@ -1,15 +1,14 @@
 package co.sofkau.questions;
-import co.sofkau.models.ResponseGetListar;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class ReturnGetListar implements Question<ResponseGetListar> {
+public class ReturnGetListar implements Question<String> {
 
     @Override
-    public ResponseGetListar answeredBy(Actor actor) {
+    public String answeredBy(Actor actor) {
 
-        return SerenityRest.lastResponse().as(ResponseGetListar.class);
+        return SerenityRest.lastResponse().asString();
 
     }
 

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro fallido" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-03T20:13:21" hostname="PSOFKA0166" time="0.815">
-  <properties/>
-  <testcase name="Registro fallido" classname="Registro fallido" time="0.815"/>
-  <system-out><![CDATA[{"error":"Missing password"}
-2023-04-03 15:13:21 INFO  PostRegistroFallidoStepDefinitions:56 Codigo de respuesta: 400
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

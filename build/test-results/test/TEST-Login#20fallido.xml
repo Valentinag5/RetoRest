@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login fallido" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-03T20:13:19" hostname="PSOFKA0166" time="0.74">
-  <properties/>
-  <testcase name="Login Fallido" classname="Login fallido" time="0.74"/>
-  <system-out><![CDATA[2023-04-03 15:13:20 INFO  PostLoginExitosoStepDefinitions:53 Codigo de respuesta: 404
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

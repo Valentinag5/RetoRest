@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Actualizar usuario patch","type":"feature","href":"28251deff1e31f755d0f3b5ff15dd3ade772c34f34ca2891575b1e5bec48a011.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Actualizar usuario patch","type":"feature","href":"28251deff1e31f755d0f3b5ff15dd3ade772c34f34ca2891575b1e5bec48a011.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-04-2023 15:13</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-04-2023 11:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -289,7 +289,7 @@ quiero actualizar un usuario
                                                                                             <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                                href="8ea068bf487c5d2e951f2e0b327228c38ebfd8ce663c9f5ee82151529be73112.html"
                                                                                                title="View test results">
-                                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
+                                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                                                                 </a>
 
 
@@ -311,11 +311,11 @@ quiero actualizar un usuario
 
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="300e618a-3c4c-4e28-9852-484b0d413200" ></a>
+                                                        <a name="a8568923-034d-4845-8e4e-e2d0e2b4bbcf" ></a>
 
 
                                                             <div class="scenario-docs card" id="76a590be468867821401d1d1221daeaee2cd80996e8e675c4707b23ca0274574">
-                                                                <div class="scenario-docs card-header failure"
+                                                                <div class="scenario-docs card-header success"
                                                                      style="min-height:1.5em;">
                                                                     <div>
                                                             <span class="scenario-heading">
@@ -325,7 +325,7 @@ quiero actualizar un usuario
                                                                         <span class="scenario-result-icon">
                                                                 
 
-                                                                                <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a>
+                                                                                <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                                             </span>
                                                                     </div>
                                                                 </div>
@@ -362,10 +362,10 @@ quiero actualizar un usuario
                                                 </div>
                                                 <script>
 
-                                                    var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
+                                                    var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                     // Our series array that contains series objects or in this case series data arrays
 
-                                                    var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                    var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                     // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                     // as you saw in the previous example
@@ -404,11 +404,12 @@ quiero actualizar un usuario
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                                <td class="aggregate-result-count"><i
-                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
+                                                                <td class="aggregate-result-count">
+                                                                    <a href="816ac95e19b17c100839843091794693a07d12e4c176fabe4dcca9f26c4b8c9c.html"><i
+                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
                                                                 </td>
-                                                            <td class="automated-stats">0</td>
-                                                            <td class="automated-stats"> </td>
+                                                            <td class="automated-stats">1</td>
+                                                            <td class="automated-stats">100%</td>
                                                         </tr>
                                                         <tr>
                                                                 <td class="aggregate-result-count"><i
@@ -432,19 +433,19 @@ quiero actualizar un usuario
                                                             <td class="automated-stats"> </td>
                                                         </tr>
                                                         <tr>
-                                                                    <td colspan="3"><a href="0de7dbb89f5031527f5c174482761c52d445e751732a5a9485a759917834479d.html"><i
-                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                    <td colspan="3"><i
+                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                     </td>
 
                                                         </tr>
 
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
-                                                                    <a href="e624e81cda226a1c912a0c1f07195bef2e3ad91f71334699ee1bc3b8b96ac704.html"><i
-                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    <i
+                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
                                                                 </td>
-                                                            <td class="automated-stats">1</td>
-                                                            <td class="automated-stats">100%</td>
+                                                            <td class="automated-stats">0</td>
+                                                            <td class="automated-stats"> </td>
                                                         <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -484,11 +485,11 @@ quiero actualizar un usuario
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td>1s</td>
-                                                            <td>1ms</td>
-                                                            <td>1s</td>
-                                                            <td>1s</td>
-                                                            <td>1s</td>
+                                                            <td>4s</td>
+                                                            <td>4ms</td>
+                                                            <td>4s</td>
+                                                            <td>4s</td>
+                                                            <td>4s</td>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -512,17 +513,17 @@ quiero actualizar un usuario
                                                             </tr>
                                                             </thead>
                                                             <tbody>
-                                                                <tr class="scenario-result FAILURE">
+                                                                <tr class="scenario-result SUCCESS">
                                                                     <td>
                                                                             <a href="8ea068bf487c5d2e951f2e0b327228c38ebfd8ce663c9f5ee82151529be73112.html">Actualizar usuario patch</a>
                                                                             (1 example)
                                                                     </td>
                                                                     <td>3</td>
-                                                                    <td>15:13:16</td>
-                                                                    <td>1s 411ms</td>
+                                                                    <td>11:55:18</td>
+                                                                    <td>4s 903ms</td>
                                                                     <td>
-                                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
-                                                                                style="display:none">FAILURE</span>
+                                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
+                                                                                style="display:none">SUCCESS</span>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>

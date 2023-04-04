@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registro exitoso" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-03T20:13:20" hostname="PSOFKA0166" time="0.729">
-  <properties/>
-  <testcase name="Registro Exitoso" classname="Registro exitoso" time="0.729"/>
-  <system-out><![CDATA[2023-04-03 15:13:21 INFO  PostRegistroExitosoStepDefinitions:67 Codigo de respuesta: 200
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

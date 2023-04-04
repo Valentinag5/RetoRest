@@ -1,6 +1,7 @@
 package co.sofkau.stepdefinitions;
 
 import co.sofkau.models.PostCrearUsuario;
+import co.sofkau.models.Response;
 import co.sofkau.models.ResponsePostCrearUsuario;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
@@ -52,16 +53,16 @@ public class PostCrearUsuarioStepDefinitions extends ApiSetUp {
     @Entonces("el usuario visualiza un codigo de respuesta de estado {int} y un {string}, un {string} y un {int}")
     public void elUsuarioVisualizaUnCodigoDeRespuestaDeEstadoYUnUnYUn(Integer codigo, String nombre, String trabajo, Integer id) {
         try {
-            ResponsePostCrearUsuario actualResponse = returnPostCrearUsuario().answeredBy(actor);
+            String actualResponse = returnPostCrearUsuario().answeredBy(actor);
             actor.should(
                     seeThatResponse("El codigo de respuesta es: " + HttpStatus.SC_OK,
                             response -> response.statusCode(codigo)),
                     seeThat("El nombre es",
-                            nomb -> actualResponse.getNombre(),equalTo(nombre)),
+                            nomb -> actualResponse,equalTo(nombre)),
                     seeThat("El trabajo es",
-                            trabaj -> actualResponse.getTrabajo(),equalTo(trabajo)),
+                            trabaj -> actualResponse,equalTo(trabajo)),
                     seeThat("El id es",
-                            ids -> actualResponse.getId(),equalTo(id))
+                            ids -> actualResponse,equalTo(id))
 
             );
             LOGGER.info("Codigo de respuesta: " + codigo);
